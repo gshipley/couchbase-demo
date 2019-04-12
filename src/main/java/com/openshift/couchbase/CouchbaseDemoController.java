@@ -1,4 +1,4 @@
-package com.javacouch;
+package com.openshift.couchbase;
 
 import java.util.Date;
 
@@ -15,14 +15,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-public class JavaCouchController {
+public class CouchbaseDemoController {
     @Autowired
     Environment environment;
     @RequestMapping("/")
     public String defaultRoute() {
 
         Cluster cluster = CouchbaseCluster.create("cb-example");
-        cluster = cluster.authenticate("username", "password");
+        cluster = cluster.authenticate("QWRtaW5pc3RyYXRvcg==", "cGFzc3dvcmQ=");
         Bucket bucket = cluster.openBucket("default");
 
         JsonObject user = JsonObject.empty()

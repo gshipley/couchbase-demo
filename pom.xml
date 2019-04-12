@@ -8,8 +8,8 @@
 	<version>1.0</version>
 	<packaging>jar</packaging>
 
-	<name>javacouch</name>
-	<description>Java Couch</description>
+	<name>couchbase-demo</name>
+	<description>Couchbase OpenShift demo</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -43,16 +43,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.pdfbox</groupId>
-			<artifactId>pdfbox</artifactId>
-			<version>2.0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.pdfbox</groupId>
-			<artifactId>pdfbox-tools</artifactId>
-			<version>2.0.1</version>
 		</dependency>
 		<dependency>
     		<groupId>commons-io</groupId>

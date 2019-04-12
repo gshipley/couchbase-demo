@@ -1,4 +1,4 @@
-package com.javacouch;
+package com.openshift.couchbase;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,14 +8,14 @@ import org.springframework.core.env.Environment;
 
 
 @SpringBootApplication
-public class JavaCouchApplication {
+public class CouchbaseDemoApplication {
 
 	@Autowired
 	private static Environment environment;
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(JavaCouchApplication.class, args);
+		SpringApplication.run(CouchbaseDemoApplication.class, args);
 
 	}
 }

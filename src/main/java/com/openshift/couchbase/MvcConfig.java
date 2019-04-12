@@ -1,4 +1,4 @@
-package com.javacouch;
+package com.openshift.couchbase;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
