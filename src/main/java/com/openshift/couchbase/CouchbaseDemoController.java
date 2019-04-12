@@ -22,7 +22,7 @@ public class CouchbaseDemoController {
     public String defaultRoute() {
 
         Cluster cluster = CouchbaseCluster.create("cb-example");
-        cluster = cluster.authenticate("Administrator", "password");
+        cluster = cluster.authenticate("gshipley", "password");
         Bucket bucket = cluster.openBucket("default");
 
         JsonObject user = JsonObject.empty()
