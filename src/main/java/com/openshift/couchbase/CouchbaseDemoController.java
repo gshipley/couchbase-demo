@@ -21,8 +21,9 @@ public class CouchbaseDemoController {
     @RequestMapping("/")
     public String defaultRoute() {
 
-        Cluster cluster = CouchbaseCluster.create("cb-example");
-        cluster = cluster.authenticate("gshipley", "password");
+//        Cluster cluster = CouchbaseCluster.create("cb-example");
+        Cluster cluster = CouchbaseCluster.create("couchbase://cb-example/default");
+        cluster = cluster.authenticate("Administrator", "password");
         Bucket bucket = cluster.openBucket("default");
 
         JsonObject user = JsonObject.empty()
